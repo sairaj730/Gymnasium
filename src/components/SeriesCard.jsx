@@ -16,9 +16,6 @@ export const SeriesCard = ({curElem}) => {
             transition: background-color 0.25s;
             width: auto;
     `;
-    // function HandleOnClick () {
-    //     alert("hey this is on click button");
-    // }
     return (
         <div>
             <li className="card">
@@ -28,9 +25,7 @@ export const SeriesCard = ({curElem}) => {
                 <p className="text-3xl font-bold underline text-cyan-200"><strong>Summary: </strong> {description}</p>
                 <p><strong>Cast: </strong> {cast }</p>
                 <p><strong>Genre:</strong> {genre}</p>
-                {/* <a href={watch_url}><button className= {ratingClass}>Watch now</button></a> */}
                 <a href={watch_url}><WatchButton rating={rating}>Watch now</WatchButton></a>
-                {/* <a onClick={HandleOnClick}><WatchButton rating={rating}>Watch now</WatchButton></a> */}
             </li>
         </div>
     )
