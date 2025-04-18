@@ -1,17 +1,10 @@
-// import "./components/hooks/Modifications.css";
-import { ToggleSwitch } from "./Projects/ToggleSwitch/ToggleSwitch";
-import "./Projects/ToggleSwitch/ToggleSwitch.css";
+import { LoginForm } from "./Projects/Form/LoginForm";
+import "./Projects/Form/LoginForm.css";
 export const App = () => {
   return (
       <>
-      <ToggleSwitch/>
+      {/* <ToggleSwitch/> */}
+      <LoginForm/>
     </>
   );
 };
-// export function Sibling() {
-//   console.log("Sibling component rendered");
-//   return (<div className="main-div">
-//       <h2>Sibling compoent</h2>
-//   </div>);
-// }
-
