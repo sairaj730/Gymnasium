@@ -1,11 +1,12 @@
-import { NetflixSeries } from "./components/NetflixSeries";
-import "./components/Netflix.css";
-import "./Projects/Form/LoginForm.css";
+import { ForwardRef } from "./components/hooks/ForwardRef.jsx";
+// import { ToggleSwitch } from "./Projects/ToggleSwitch/ToggleSwitch.jsx";
+// import "./Projects/ToggleSwitch/ToggleSwitch.css";
 export const App = () => {
   return (
       <>
       {/* <ToggleSwitch/> */}
-      <NetflixSeries/>
+      <ForwardRef/>
+      {/* <Pokemon/> */}
     </>
   );
 };
