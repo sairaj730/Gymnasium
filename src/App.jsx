@@ -1,12 +1,13 @@
-import { ForwardRef } from "./components/hooks/ForwardRef.jsx";
-// import { ToggleSwitch } from "./Projects/ToggleSwitch/ToggleSwitch.jsx";
-// import "./Projects/ToggleSwitch/ToggleSwitch.css";
+import { SetThemeProvider } from "./Projects/ColorTheme/DarkLight.jsx";
+import { DarkLight } from "./Projects/ColorTheme/DarkLight.jsx";
+import "./Projects/ColorTheme/DarkLight.css";
+
 export const App = () => {
   return (
       <>
-      {/* <ToggleSwitch/> */}
-      <ForwardRef/>
-      {/* <Pokemon/> */}
+      <SetThemeProvider>
+        <DarkLight/>
+      </SetThemeProvider>
     </>
   );
 };
